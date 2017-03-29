@@ -15,4 +15,5 @@
 - Needs to be documented if employee did not log overtime
 
 ## UI:
+- Add full name method for users
 - Bootstrap -> formatting
