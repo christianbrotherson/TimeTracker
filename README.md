@@ -10,8 +10,8 @@
 ## Features:
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
-- Administrate admin dashboard
-- Block non-admin and guest users
+- x Administrate admin dashboard
+- x Block non admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
@@ -20,5 +20,5 @@
 - Icons from Font Awesome
 - x Update the styles for forms
 
-## Refactor TODOs:
-- Refactor user association integration test in post_specs
+## Refactor TODOS:
+- Refactor user association integration test in post_spec
