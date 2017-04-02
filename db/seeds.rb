@@ -7,19 +7,19 @@ AdminUser.create(email: "admin@test.com", password: "asdfasdf", password_confirm
 puts "1 AdminUser created"
 
 34.times do |post|
-	Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "submitted")
+	Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "submitted", overtime_request: 2.5)
 end
 
 puts "34 submitted Posts have been created"
 
 33.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "approved")
+  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "approved", overtime_request: 2.5)
 end
 
 puts "33 approved Posts have been created"
 
 33.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "rejected")
+  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, status: "rejected", overtime_request: 2.5)
 end
 
 puts "33 rejected Posts have been created"
