@@ -42,7 +42,7 @@ describe 'navigate' do
   end
 
   describe 'new' do
-    it 'has a link from the home page' do
+    it 'has a link from the homepage' do
       visit root_path
 
       click_link("new_post_from_nav")
@@ -79,9 +79,8 @@ describe 'navigate' do
       fill_in 'post[date]', with: Date.today
       fill_in 'post[rationale]', with: "Some rationale"
       fill_in 'post[overtime_request]', with: 4.5
-      click_on "Save"
 
-      expect(page).to have_content("Some rationale")
+      expect { click_on "Save" }.to change(Post, :count).by(1)
     end
 
     it 'will have a user associated it' do
@@ -113,11 +112,6 @@ describe 'navigate' do
       visit edit_post_path(post)
 
       expect(current_path).to eq(root_path)
-    end
-
-    it 'has an overtime_request greater than 0.0' do
-      @post.overtime_request = 0.0
-      expect(@post).to_not be_valid
     end
   end
 end
