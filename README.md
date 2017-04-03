@@ -20,8 +20,8 @@
 - Icons from Font Awesome
 - x Update the styles for forms
 
-## Refactor TODOS:
-- Refactor user association integration test in post_spec
-- Refactor posts/_form for admin user with status
-- Fix post_spec.rb:82 to use factories
-- Fix post_spec.rb:52 to have correct user reference and not require update
+## TODOS:
+- Integrate validation for phone attribute in user 
+  # No spaces or dashes
+  # exactly 10 characters
+  # all characters have to be a number
