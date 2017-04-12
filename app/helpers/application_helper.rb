@@ -2,10 +2,18 @@ module ApplicationHelper
   def admin_types
     ['AdminUser']
   end
+
+  def employee?
+    current_user.type == 'Employee'
+  end
+
+  def admin?
+    admin_types.include?(current_user.type)
+  end
   
-	def active?(path)
-		"active" if current_page?(path)
-	end
+  def active?(path)
+    "active" if current_page?(path)
+  end
 
   def status_label status
     status_span_generator status

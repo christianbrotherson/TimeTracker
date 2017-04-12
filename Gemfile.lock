@@ -253,7 +253,7 @@ PLATFORMS
 DEPENDENCIES
   administrate (~> 0.4.0)
   bootstrap-sass (~> 3.3, >= 3.3.6)
-  bourbon (~> 4.2)
+  bourbon
   byebug
   capybara
   coffee-rails (~> 4.2)
@@ -261,7 +261,7 @@ DEPENDENCIES
   devise (~> 4.2)
   dotenv-rails
   factory_girl_rails (~> 4.7)
-  gritter (~> 1.2)
+  gritter (= 1.2.0)
   jbuilder (~> 2.5)
   jquery-rails
   kaminari (~> 0.17.0)

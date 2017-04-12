@@ -7,13 +7,13 @@
 				#
 			</th>
 			<th>
-				Overtime Request
+				Overtime Requested
 			</th>
 			<th>
 				Date
 			</th>
 			<th>
-				Employee
+				User
 			</th>
 			<th>
 				Rationale
@@ -21,6 +21,7 @@
 			<th>
 				Status
 			</th>
+			<th></th>
 			<th></th>
 		</tr>
 	</thead>
@@ -30,5 +31,5 @@
 </table>
 
 <div id="paginator">
-  <%= paginate @posts, remote: true %>
+	<%= paginate @posts, remote: true %>
 </div>

@@ -12,4 +12,3 @@ module SmsTool
     )
   end
 end
-
